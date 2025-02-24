@@ -1,0 +1,742 @@
+{
+  "TRENDConnect": {
+    "Regular Releases": {
+      "25.04": {
+        "tests": [
+          {
+            "id": "0001",
+            "case": "Commission Report Import",
+            "result": null,
+            "sub_tests": [
+              {
+                "id": "0002",
+                "case": "See TAD-T4933",
+                "result": "pass"
+              }
+            ]
+          },
+          {
+            "id": "0003",
+            "case": "ODAR Export Improvements with adding Pre-Approval",
+            "result": null,
+            "sub_tests": [
+              {
+                "id": "0004",
+                "case": "See TAD-T4934, TAD-T4932",
+                "result": "pass"
+              }
+            ]
+          },
+          {
+            "id": "0005",
+            "case": "Premera Audit Submission Export Pulling Pending QA tag in error and Add FEP to populate",
+            "result": null,
+            "sub_tests": [
+              {
+                "id": "0006",
+                "case": "See TAD-19983",
+                "result": "pass"
+              }
+            ]
+          },
+          {
+            "id": "0007",
+            "case": "System Admin Status Updater Page",
+            "result": null,
+            "sub_tests": [
+              {
+                "id": "0008",
+                "case": "See TAD-20103",
+                "result": "pass"
+              }
+            ]
+          },
+          {
+            "id": "0009",
+            "case": "CareFirst Check Approval Letter always fails to generate when account audit is approved",
+            "result": null,
+            "sub_tests": [
+              {
+                "id": "0010",
+                "case": "See TAD-20221",
+                "result": "pass"
+              }
+            ]
+          },
+          {
+            "id": "0011",
+            "case": "Resolve Merge Conflict (25.03 -> Development)",
+            "result": null,
+            "sub_tests": [
+              {
+                "id": "0012",
+                "case": "See TAD-20215; no active testing needed as confirmed by Glenn",
+                "result": "pass"
+              }
+            ]
+          },
+          {
+            "id": "0013",
+            "case": "Github Unit Test Runner and Unit Test updates",
+            "result": null,
+            "sub_tests": [
+              {
+                "id": "0014",
+                "case": "See TAD-20217; no active testing needed as confirmed by Glenn",
+                "result": "pass"
+              }
+            ]
+          },
+          {
+            "id": "0015",
+            "case": "Error with Provider Submission Detail Report",
+            "result": null,
+            "sub_tests": [
+              {
+                "id": "0016",
+                "case": "Update so that running the Provider Submission Detail or Provider Submission Detail - PAS Reports through the reports page properly generates the designated Excel files.",
+                "result": null
+              }
+            ]
+          },
+          {
+            "id": "0017",
+            "case": "Provider Submission Detail",
+            "result": null,
+            "sub_tests": [
+              {
+                "id": "0018",
+                "case": "Reproduce the bug in test-client",
+                "result": "pass"
+              },
+              {
+                "id": "0019",
+                "case": "Check if it is fixed in test-feature",
+                "result": "pass"
+              },
+              {
+                "id": "0020",
+                "case": "Report generates without error using Calibri font",
+                "result": "pass"
+              },
+              {
+                "id": "0021",
+                "case": "Compare report to test-client version",
+                "result": "pass"
+              },
+              {
+                "id": "0022",
+                "case": "Provider Submission Detail - PAS",
+                "result": "pass"
+              }
+            ]
+          },
+          {
+            "id": "0023",
+            "case": "Check other excel reports",
+            "result": null,
+            "sub_tests": [
+              {
+                "id": "0024",
+                "case": "Client Submission Detail Report",
+                "result": "pass"
+              },
+              {
+                "id": "0025",
+                "case": "Invoice Detail",
+                "result": "pass"
+              },
+              {
+                "id": "0026",
+                "case": "Submission Needed Report",
+                "result": "pass"
+              },
+              {
+                "id": "0027",
+                "case": "Carefirst Client Invoice Report",
+                "result": "pass"
+              },
+              {
+                "id": "0028",
+                "case": "Ask why this one report was failing",
+                "result": "pass"
+              },
+              {
+                "id": "0029",
+                "case": "Check if client package is adding overpayments already added to client package (appears to be the rules)",
+                "result": null
+              }
+            ]
+          },
+          {
+            "id": "0030",
+            "case": "AdditionalClaimsProfileService runs sync over async",
+            "result": null,
+            "sub_tests": []
+          },
+          {
+            "id": "0031",
+            "case": "Acceptance Criteria",
+            "result": null,
+            "sub_tests": [
+              {
+                "id": "0032",
+                "case": "Verify that you are able to login.",
+                "result": "pass"
+              },
+              {
+                "id": "0033",
+                "case": "Perform some basic system operations like navigating, searching, and viewing. Verify that they are appropriate actions for the user you are currently logged-in as.",
+                "result": "pass"
+              },
+              {
+                "id": "0034",
+                "case": "This change only impacts the result of the /connect/userinfo request (the result should be the same as before the change for a specific user). It should look like below:",
+                "result": "pass"
+              }
+            ]
+          },
+          {
+            "id": "0035",
+            "case": "Check that a provider analyst with access to only one company and only assigned records can only do allowed actions and review assigned records",
+            "result": null,
+            "sub_tests": [
+              {
+                "id": "0036",
+                "case": "Login as provider analyst (NOT \"provider analyst update all\")",
+                "result": "pass"
+              },
+              {
+                "id": "0037",
+                "case": "Verify you can't go to URL of a different company",
+                "result": "pass"
+              },
+              {
+                "id": "0038",
+                "case": "Verify you can't view the OID of a record you're not assigned to",
+                "result": "pass"
+              },
+              {
+                "id": "0039",
+                "case": "Verify you see the normal nav menu items",
+                "result": "pass"
+              },
+              {
+                "id": "0040",
+                "case": "Verify you can view records you are NOT assigned to when you have the \"provider analyst update all\" role",
+                "result": "pass"
+              }
+            ]
+          },
+          {
+            "id": "0041",
+            "case": "Client package detail error",
+            "result": null,
+            "sub_tests": [
+              {
+                "id": "0042",
+                "case": "6-204028 failed, probably due to size of package",
+                "result": "fail"
+              }
+            ]
+          },
+          {
+            "id": "0043",
+            "case": "Regression test - MFA",
+            "result": null,
+            "sub_tests": []
+          },
+          {
+            "id": "0044",
+            "case": "Add new user with MFA",
+            "result": null,
+            "sub_tests": [
+              {
+                "id": "0045",
+                "case": "Use System Support with the HR Director role",
+                "result": "pass"
+              },
+              {
+                "id": "0046",
+                "case": "Go to Admin - Users - Users - User Wizard and create a new user",
+                "result": "pass"
+              },
+              {
+                "id": "0047",
+                "case": "Generates an email with a link to set password (Use System - Admin - Email Queue for all emails)",
+                "result": "pass"
+              },
+              {
+                "id": "0048",
+                "case": "Set the new password via the email link (System - Admin - Email Queue)",
+                "result": "pass"
+              },
+              {
+                "id": "0049",
+                "case": "Login as the new user in separate browser (Keep your System Support window available for Email queue and editing the user)",
+                "result": "pass"
+              },
+              {
+                "id": "0050",
+                "case": "Redirected to Security Code page * Verification code should be sent via email",
+                "result": "pass"
+              },
+              {
+                "id": "0051",
+                "case": "Try to submit an invalid Security code",
+                "result": "pass"
+              },
+              {
+                "id": "0052",
+                "case": "Make sure you can't access an inner TREND URL (proves the login didn't succeed)",
+                "result": "pass"
+              },
+              {
+                "id": "0053",
+                "case": "Finish login with valid Security code",
+                "result": "pass"
+              },
+              {
+                "id": "0054",
+                "case": "Verify the User Terms takes you to an external link on the Trend Health Partners site",
+                "result": "pass"
+              },
+              {
+                "id": "0055",
+                "case": "Verify logged in after accepting terms",
+                "result": "pass"
+              }
+            ]
+          },
+          {
+            "id": "0056",
+            "case": "Enable MFA",
+            "result": null,
+            "sub_tests": [
+              {
+                "id": "0057",
+                "case": "Go to the User Cog in the upper right  - Two-Factor Authentication",
+                "result": "pass"
+              },
+              {
+                "id": "0058",
+                "case": "Start app configuration",
+                "result": "pass"
+              },
+              {
+                "id": "0059",
+                "case": "Use the Authenticator app on your phone to scan the QR code",
+                "result": "pass"
+              },
+              {
+                "id": "0060",
+                "case": "Check that an invalid code doesn't work",
+                "result": "pass"
+              },
+              {
+                "id": "0061",
+                "case": "Enter the valid code from the app",
+                "result": "pass"
+              },
+              {
+                "id": "0062",
+                "case": "Copy the recovery codes",
+                "result": "pass"
+              }
+            ]
+          },
+          {
+            "id": "0063",
+            "case": "Test Recovery Codes",
+            "result": null,
+            "sub_tests": [
+              {
+                "id": "0064",
+                "case": "Logout and try to login using invalid recovery code",
+                "result": "pass"
+              },
+              {
+                "id": "0065",
+                "case": "Verify failure",
+                "result": "pass"
+              },
+              {
+                "id": "0066",
+                "case": "Login with the recovery code",
+                "result": "pass"
+              },
+              {
+                "id": "0067",
+                "case": "Verify success",
+                "result": "pass"
+              },
+              {
+                "id": "0068",
+                "case": "Log and try to login again with the previously used code",
+                "result": "pass"
+              },
+              {
+                "id": "0069",
+                "case": "Verify failure",
+                "result": "pass"
+              }
+            ]
+          },
+          {
+            "id": "0070",
+            "case": "Regenerate Codes",
+            "result": null,
+            "sub_tests": [
+              {
+                "id": "0071",
+                "case": "Login (via normal verification code) and go back to the User Cog - Two-Factor Auth page and generate new codes",
+                "result": null
+              },
+              {
+                "id": "0072",
+                "case": "Logout and try to login with one of the unused old recovery codes",
+                "result": null
+              },
+              {
+                "id": "0073",
+                "case": "Verify failure",
+                "result": null
+              },
+              {
+                "id": "0074",
+                "case": "Login with a new code",
+                "result": null
+              },
+              {
+                "id": "0075",
+                "case": "Verify success",
+                "result": null
+              }
+            ]
+          },
+          {
+            "id": "0076",
+            "case": "Remember This Device",
+            "result": null,
+            "sub_tests": [
+              {
+                "id": "0077",
+                "case": "Login again with app code and \"Remember this device\"",
+                "result": "pass"
+              },
+              {
+                "id": "0078",
+                "case": "Verify success",
+                "result": "pass"
+              },
+              {
+                "id": "0079",
+                "case": "Login again and make sure it doesn't ask for code, because device is remembered",
+                "result": "pass"
+              }
+            ]
+          },
+          {
+            "id": "0080",
+            "case": "Forget this device",
+            "result": null,
+            "sub_tests": [
+              {
+                "id": "0081",
+                "case": "\"Forget this device\" by clicking the red X next to your location/browser record",
+                "result": null
+              },
+              {
+                "id": "0082",
+                "case": "Logout and verify next login requires code",
+                "result": null
+              }
+            ]
+          },
+          {
+            "id": "0083",
+            "case": "Forgot password",
+            "result": null,
+            "sub_tests": [
+              {
+                "id": "0084",
+                "case": "Log out and start login again, but do \"Forgot Password\"",
+                "result": "pass"
+              },
+              {
+                "id": "0085",
+                "case": "Use the other System Support user to grab the password reset link from the system/email queue",
+                "result": "pass"
+              },
+              {
+                "id": "0086",
+                "case": "Follow the link using new private browser tab",
+                "result": "pass"
+              },
+              {
+                "id": "0087",
+                "case": "Make sure you can't use the old password",
+                "result": null
+              },
+              {
+                "id": "0088",
+                "case": "Complete the password reset and login",
+                "result": "pass"
+              }
+            ]
+          },
+          {
+            "id": "0089",
+            "case": "Login with incorrect password",
+            "result": null,
+            "sub_tests": [
+              {
+                "id": "0090",
+                "case": "Should see a validation message",
+                "result": "pass"
+              }
+            ]
+          },
+          {
+            "id": "0091",
+            "case": "Lock out",
+            "result": null,
+            "sub_tests": [
+              {
+                "id": "0092",
+                "case": "Enter wrong password over 3 times",
+                "result": "pass"
+              },
+              {
+                "id": "0093",
+                "case": "Should be redirected to Microsoft Auth",
+                "result": "pass"
+              },
+              {
+                "id": "0094",
+                "case": "Check that user is now \"Locked out\"",
+                "result": "pass"
+              }
+            ]
+          },
+          {
+            "id": "0095",
+            "case": "Login with fake email",
+            "result": null,
+            "sub_tests": [
+              {
+                "id": "0096",
+                "case": "Should be redirected to Microsoft Auth",
+                "result": "pass"
+              }
+            ]
+          },
+          {
+            "id": "0097",
+            "case": "Send Email for Code",
+            "result": null,
+            "sub_tests": [
+              {
+                "id": "0098",
+                "case": "Start login process, entering password",
+                "result": null
+              },
+              {
+                "id": "0099",
+                "case": "On the code entry screen, send code via email",
+                "result": null
+              },
+              {
+                "id": "0100",
+                "case": "Using separate login, find the email Admin/System/Email Queue and login with the code",
+                "result": null
+              }
+            ]
+          },
+          {
+            "id": "0101",
+            "case": "Disable MFA",
+            "result": null,
+            "sub_tests": [
+              {
+                "id": "0102",
+                "case": "Go back to Two-Factor Auth page and disable authenticator, make sure browsers are forgot",
+                "result": null
+              },
+              {
+                "id": "0103",
+                "case": "Login again and make sure email code is requested (since MFA is still enabled)",
+                "result": null
+              },
+              {
+                "id": "0104",
+                "case": "Use your original System Support login to edit the user and disable MFA",
+                "result": null
+              },
+              {
+                "id": "0105",
+                "case": "Try again to login as the new user",
+                "result": null
+              },
+              {
+                "id": "0106",
+                "case": "Shouldn't require any codes",
+                "result": null
+              }
+            ]
+          },
+          {
+            "id": "0107",
+            "case": "Check auth logs",
+            "result": null,
+            "sub_tests": [
+              {
+                "id": "0108",
+                "case": "View the new user Auth Logs under Admin/Users/View",
+                "result": null
+              },
+              {
+                "id": "0109",
+                "case": "Verify the \"Events\" include, among others:  MFA Bypassed  MFA Authenticator Disabled  MFA Code verified  User Login Verify failure  MFA Recovery Code Entered  MFA Device Forgotten",
+                "result": null
+              }
+            ]
+          },
+          {
+            "id": "0110",
+            "case": "External User MFA tests",
+            "result": null,
+            "sub_tests": [
+              {
+                "id": "0111",
+                "case": "If additional risk related to external user login (or run at least once every couple months",
+                "result": null
+              },
+              {
+                "id": "0112",
+                "case": "Again with original System Support, create a new provider user via the User Wizard",
+                "result": null
+              },
+              {
+                "id": "0113",
+                "case": "Service sources and all Medstar providers should appear in the User view/Linked Entities section",
+                "result": null
+              },
+              {
+                "id": "0114",
+                "case": "Repeat setup for MFA with provider user: 1. Set password 2. Login with email code 3. Configure MFA app 4. Login with app code",
+                "result": null
+              }
+            ]
+          },
+          {
+            "id": "0115",
+            "case": "Activating and Deactivating Users",
+            "result": null,
+            "sub_tests": [
+              {
+                "id": "0116",
+                "case": "Locate an active user",
+                "result": null
+              },
+              {
+                "id": "0117",
+                "case": "Deactivate them",
+                "result": null
+              },
+              {
+                "id": "0118",
+                "case": "This should remove their roles as well",
+                "result": null
+              },
+              {
+                "id": "0119",
+                "case": "Make sure they can't login - should be redirected to Microsoft Auth SSO",
+                "result": null
+              },
+              {
+                "id": "0120",
+                "case": "Reactive them, making sure to add their roles back",
+                "result": null
+              },
+              {
+                "id": "0121",
+                "case": "Set new password via the system/email queue link",
+                "result": null
+              },
+              {
+                "id": "0122",
+                "case": "Login with the reactivated user",
+                "result": null
+              }
+            ]
+          },
+          {
+            "id": "0123",
+            "case": "Do a password change from the UI",
+            "result": null,
+            "sub_tests": [
+              {
+                "id": "0124",
+                "case": "User cog/Change Passphrase",
+                "result": null
+              },
+              {
+                "id": "0125",
+                "case": "Make sure can't use current password",
+                "result": null
+              },
+              {
+                "id": "0126",
+                "case": "Try another invalid password type",
+                "result": null
+              },
+              {
+                "id": "0127",
+                "case": "Use \"Suggest' passphrase",
+                "result": null
+              },
+              {
+                "id": "0128",
+                "case": "Complete password change",
+                "result": null
+              }
+            ]
+          },
+          {
+            "id": "0129",
+            "case": "Test",
+            "result": null,
+            "sub_tests": [
+              {
+                "id": "0130",
+                "case": "Adding some new coverage",
+                "result": "pass"
+              },
+              {
+                "id": "0131",
+                "case": "something that passes",
+                "result": "pass"
+              },
+              {
+                "id": "0132",
+                "case": "Something that fails",
+                "result": "fail"
+              },
+              {
+                "id": "0133",
+                "case": "Something blocked",
+                "result": null
+              },
+              {
+                "id": "0134",
+                "case": "And not tested yet",
+                "result": "pass"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
